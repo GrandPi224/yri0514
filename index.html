@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yardeni Research Morning Briefing Quiz</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 2rem;
+      background: #f9f9f9;
+    }
+    h1 {
+      text-align: center;
+    }
+    .quiz-container {
+      max-width: 700px;
+      margin: auto;
+      background: white;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .question {
+      margin-bottom: 2rem;
+    }
+    .question h3 {
+      margin-bottom: 0.5rem;
+    }
+    .options button {
+      display: block;
+      margin: 0.5rem 0;
+      padding: 0.5rem 1rem;
+      border: 1px solid #ccc;
+      background: #f0f0f0;
+      cursor: pointer;
+      width: 100%;
+      text-align: left;
+    }
+    .options button.correct {
+      background-color: #c8e6c9;
+      border-color: #388e3c;
+    }
+    .options button.wrong {
+      background-color: #ffcdd2;
+      border-color: #d32f2f;
+    }
+    .feedback {
+      font-weight: bold;
+      margin-top: 0.5rem;
+    }
+    .explanation {
+      margin-top: 0.5rem;
+      font-size: 0.97em;
+      color: #345;
+      background: #f2f6fa;
+      padding: 0.5rem;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="quiz-container">
+    <h1>Yardeni Research Morning Briefing Quiz</h1>
+    <div class="question"><h3>1. What significant trade policy change occurred between the US and China recently?</h3>
+      <div class="options">
+        <button>A) China increased tariffs on US imports to 145%</button>
+        <button>B) The US imposed new sanctions on China</button>
+        <button class="correct" data-explain="According to the briefing, &quot;News that Donald Trump is slashing China tariffs to 30% from 145% is being heralded as the game-changer the region needs.&quot;">C) Trump slashed China tariffs from 145% to 30%</button>
+        <button>D) China banned all US imports completely</button>
+      </div>
+    </div>
+    <div class="question"><h3>2. What reciprocal action did China take in response to the US tariff reduction?</h3>
+      <div class="options">
+        <button>A) Increased military presence in the South China Sea</button>
+        <button class="correct" data-explain='The briefing states: &quot;China stepping back from the brink helps, too. Xi cut levies on US imports to 10% from 125%.&quot;'>B) Cut levies on US imports to 10% from 125%</button>
+        <button>C) Banned American technology companies</button>
+        <button>D) Increased rare earth exports by 50%</button>
+      </div>
+    </div>
+    <div class="question"><h3>3. What is India's key economic strategy shift mentioned in the briefing?</h3>
+      <div class="options">
+        <button>A) Focusing entirely on exports to replace China</button>
+        <button>B) Reducing all government spending</button>
+        <button class="correct" data-explain="India's policymakers &quot;aspire to become the world's third largest economy by boosting domestic demand.&quot;">C) Turning to domestic demand rather than relying on global trade</button>
+        <button>D) Adopting the US dollar as their official currency</button>
+      </div>
+    </div>
+    <div class="question"><h3>4. What specific sector is India investing in to stimulate domestic growth?</h3>
+      <div class="options">
+        <button>A) Manufacturing</button>
+        <button>B) Tourism</button>
+        <button>C) Agriculture</button>
+        <button class="correct" data-explain="A $1 billion stimulus fund aims at &quot;media, arts, and entertainment.&quot;">D) Creative economy and Bollywood</button>
+      </div>
+    </div>
+    <div class="question"><h3>5. What is the current status of the S&amp;P 500's quarterly earnings trend?</h3>
+      <div class="options">
+        <button>A) Seventh straight quarter of negative growth</button>
+        <button class="correct" data-explain="S&amp;P 500's blended y/y earnings growth rate for Q1 is 11.2%, marking the seventh straight quarter of positive growth.">B) Seventh straight quarter of positive year-over-year growth</button>
+        <button>C) First quarter of positive growth after a long decline</button>
+        <button>D) Completely flat with no change from previous quarters</button>
+      </div>
+    </div>
+    <div class="question"><h3>6. What happened to the NFIB Small Business Optimism Index in April 2025?</h3>
+      <div class="options">
+        <button>A) It increased by 1.6 points</button>
+        <button>B) It remained unchanged</button>
+        <button class="correct" data-explain="The SBOI &quot;fell for the fourth month, dropping 1.6 points in April.&quot;">C) It fell by 1.6 points</button>
+        <button>D) It reached an all-time high</button>
+      </div>
+    </div>
+    <div class="question"><h3>7. What does Modi want India to achieve by 2030?</h3>
+      <div class="options">
+        <button>A) Become the world's largest democracy</button>
+        <button>B) Eliminate all poverty</button>
+        <button>C) Become the world's largest exporter</button>
+        <button class="correct" data-explain="&quot;Modi's ambition to make India the world's third-largest economy by 2030...&quot;">D) Become the world's third-largest economy</button>
+      </div>
+    </div>
+    <div class="question"><h3>8. What was identified as the "single most important problem" for small business owners in April?</h3>
+      <div class="options">
+        <button>A) Inflation</button>
+        <button class="correct" data-explain="&quot;Quality of labor (19%) was again the single most important problem for small business owners in April.&quot;">B) Quality of labor</button>
+        <button>C) Government regulation</button>
+        <button>D) Poor sales</button>
+      </div>
+    </div>
+    <div class="question"><h3>9. What percentage of US-China tariffs were reduced in the recent announcement?</h3>
+      <div class="options">
+        <button>A) 30%</button>
+        <button>B) 50%</button>
+        <button class="correct" data-explain="A 79% reduction in Trumpian headwinds: 145% → 30%.">C) 79%</button>
+        <button>D) 90%</button>
+      </div>
+    </div>
+    <div class="question"><h3>10. What was India's CPI inflation rate in March 2025?</h3>
+      <div class="options">
+        <button>A) 2.1%</button>
+        <button class="correct" data-explain="&quot;India's CPI inflation eased to 3.3% y/y in March.&quot;">B) 3.3%</button>
+        <button>C) 4.0%</button>
+        <button>D) 5.7%</button>
+      </div>
+    </div>
+    <div class="question"><h3>11. Which group of companies in the S&amp;P 500 had the highest earnings surprise percentage in Q1?</h3>
+      <div class="options">
+        <button>A) Energy companies</button>
+        <button>B) Health Care sector</button>
+        <button class="correct" data-explain='&quot;The &quot;Magnificent-6&quot;s&quot; aggregate Q1 earnings surprise was 9.7%.&quot;'>C) The "Magnificent-6"</button>
+        <button>D) Consumer Staples</button>
+      </div>
+    </div>
+    <div class="question"><h3>12. What was the status of India's equity markets according to the briefing?</h3>
+      <div class="options">
+        <button>A) At an all-time high</button>
+        <button>B) Showed moderate growth</button>
+        <button>C) Remained stable with minimal changes</button>
+        <button class="correct" data-explain="&quot;India's once frothy financial markets have simmered down. Equity valuations have corrected sharply in recent weeks.&quot;">D) Corrected sharply from previously frothy valuations</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.querySelectorAll(".options button").forEach(button => {
+      button.addEventListener("click", () => {
+        const parent = button.closest(".options");
+        const buttons = parent.querySelectorAll("button");
+        const correct = parent.querySelector(".correct");
+        buttons.forEach(b => {
+          b.disabled = true;
+          if (b === correct) {
+            b.classList.add("correct");
+          } else if (b === button && b !== correct) {
+            b.classList.add("wrong");
+          }
+        });
+        // Show explanation if available
+        if (button.dataset.explain && !parent.querySelector('.explanation')) {
+          const exp = document.createElement('div');
+          exp.className = 'explanation';
+          exp.textContent = 'Explanation: ' + button.dataset.explain;
+          parent.appendChild(exp);
+        } else if (correct.dataset.explain && !parent.querySelector('.explanation')) {
+          const exp = document.createElement('div');
+          exp.className = 'explanation';
+          exp.textContent = 'Explanation: ' + correct.dataset.explain;
+          parent.appendChild(exp);
+        }
+      });
+    });
+  </script>
+</body>
+</html>
